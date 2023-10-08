@@ -4,7 +4,7 @@ from users.models import ListRegSubject
 
 class ListRegSubjectInline(admin.TabularInline):  
     model = ListRegSubject
-    extra = 1  
+    extra = 1   
 
 class adminsubject(admin.ModelAdmin):
     list_display = ['subjectName', 'subjectID', 'remaining_class', 'max_class', 'subjectStatus']
